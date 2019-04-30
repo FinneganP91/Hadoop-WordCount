@@ -20,7 +20,7 @@ public class WordCount {
 	public static String TweetTime;
 	public static void main(String [] args) throws Exception {
 		
-		System.setProperty("hadoop.home.dir", "c:\\winutils\bin");
+		
 	
 		Scanner  jc = new Scanner(new File("jobcount"));
 		JobCount = jc.nextInt();

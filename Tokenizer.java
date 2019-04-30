@@ -96,7 +96,7 @@ public class Tokenizer{
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
 		FileInputFormat.addInputPath(job, new Path("hdfs://0.0.0.0:19000/filestore/tweets/"));
-		FileOutputFormat.setOutputPath(job, new Path("C:/HadoopWordCount/output/"+ WordCount.JobCount +"/"));
+		FileOutputFormat.setOutputPath(job, new Path("local output filepath"+ WordCount.JobCount +"/"));
 	
 		job.waitForCompletion(true);
 						
@@ -171,7 +171,7 @@ public class Tokenizer{
 		  System.setProperty("hadoop.home.dir", "/");   
 	      System.setProperty("HADOOP_USER_NAME", "hdfs");  
 	     
-	      InputStream inputStream = new BufferedInputStream(new FileInputStream("c:/HadoopWordCount/output/"+WordCount.JobCount + "/part-r-00000"));  
+	      InputStream inputStream = new BufferedInputStream(new FileInputStream("local output filepath"));  
 	  
 	      FileSystem hdfs = FileSystem.get(new URI("hdfs://0.0.0.0:19000"), conf);  
 	     

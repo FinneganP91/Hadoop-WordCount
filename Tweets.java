@@ -41,10 +41,10 @@ public class Tweets{
 	        
 	    ConfigurationBuilder config = new ConfigurationBuilder();
 		config.setDebugEnabled(true);
-		config.setOAuthConsumerKey("u1MDwdozLzBpa3wftTI6QY0f6");
-		config.setOAuthConsumerSecret("vFSbxVepvUTAg2SqigPVSyMbkjOF2RBGyBgt71gxrMu07Ybhae");
-		config.setOAuthAccessToken("1114644232613048320-LY4va2FJ9jrDelhGgWp6rZIuolu9zP");
-		config.setOAuthAccessTokenSecret("id38T6fwRl0upBzz6MJd7qiwW18pyX2yf6FgaKq3ZbbK1");
+		config.setOAuthConsumerKey("****");
+		config.setOAuthConsumerSecret("****");
+		config.setOAuthAccessToken("****");
+		config.setOAuthAccessTokenSecret("****");
 				
 		TwitterStream twitterStream = new TwitterStreamFactory(config.build()).getInstance();
 		
